@@ -6,6 +6,8 @@ CREATE TABLE campaigns (
   start_date TIMESTAMP,
   end_date TIMESTAMP
 );
+CREATE INDEX ON campaigns (name);
+CREATE INDEX ON campaigns (status);
 
 DROP TABLE IF EXISTS ads;
 CREATE TABLE ads (
