@@ -38,7 +38,7 @@ class AdvertisementJdbcRepository implements AdvertisementRepository {
             "UPDATE ads " +
                     "SET name = :name, status = :status, asset_url = :asset_url " +
                     "WHERE id = :id";
-    private static final String DELETE_QUERY = "DELETE FROM campaigns WHERE id = :id";
+    private static final String DELETE_QUERY = "DELETE FROM ads WHERE id = :id";
 
     private static final String INSERT_AD_PLATFORM_QUERY = "INSERT INTO ads_platforms VALUES (:id, :platform, :ad_id)";
     private static final String SELECT_AD_PLATFORM_CODE_QUERY = "SELECT platform FROM ads_platforms WHERE ad_id = :ad_id";
